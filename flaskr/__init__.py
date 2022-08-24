@@ -8,7 +8,6 @@ from models import db, setup_db, Question, Category, User
 
 QUESTIONS_PER_PAGE = 10
 
-
 def create_app(test_config=None):
     app = Flask(__name__)
     setup_db(app)
@@ -331,6 +330,6 @@ def create_app(test_config=None):
     return app
 
 
-# if __name__ == '__main__':
-#     app = create_app()
-#     app.run()
+if __name__ == '__main__':
+    app = create_app()
+    app.run()
