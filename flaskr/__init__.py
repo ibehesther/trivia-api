@@ -7,8 +7,8 @@ import random
 from models import db, setup_db, Question, Category, User
 
 QUESTIONS_PER_PAGE = 10
-
-def create_app(test_config=None):
+# app = Flask(__name__)
+def create_app( test_config=None):
     app = Flask(__name__)
     setup_db(app)
     cors = CORS(app, resources={r"/api/*": {'origins': '*'}})
